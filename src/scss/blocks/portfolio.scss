@@ -1,0 +1,163 @@
+@import "../colors.scss";
+.portfolio-main {
+    // background-color: $bg-grey;
+}
+
+.portfolio {
+    background-color: $bg-grey;
+}
+
+.portfolio__wrapper {
+    padding: 35px 0;
+}
+
+.portfolio__tittle {
+    margin: 0;
+    text-align: center;
+}
+
+.portfolio__to-main {
+    display: none;
+}
+
+.portfolio__work {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.portfolio__best-work {
+    margin-top: 35px;
+}
+
+.portfolio__info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $border;
+    padding: 25px;
+}
+
+.portfolio__client-image {
+    flex-shrink: 0;
+    font-size: 0;
+}
+
+.portfolio__client-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.portfolio__client-review {
+    margin-top: 25px;
+    line-height: 27px;
+}
+
+.portfolio__services-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.portfolio__services-item {
+    position: relative;
+    padding-left: 40px;
+    margin-right: 25px;
+    margin-top: 25px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 21px;
+        height: 20px;
+        background-image: url("../img/admiral-beard.svg");
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio-main {
+        position: relative;
+        &::before, &::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-bottom: 100px solid $bg-grey;
+            top: -100px;
+        }
+        &::after {
+            border-left: 50vw solid transparent;
+            right: 0;
+        }
+        &::before {
+            border-right: 50vw solid transparent;
+            left: 0;
+        }
+    }
+
+    .portfolio__wrapper {
+        width: 640px;
+        margin: 0 auto;
+    }
+    
+    .portfolio__first-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .portfolio__tittle {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .portfolio__to-main {
+        display: block;
+    }
+
+    .portfolio__work {
+        flex-direction: row;
+        width: 640px;
+        margin-bottom: 40px;
+    }
+
+    .portfolio__info {
+        padding: 50px;
+        width: 100%;
+    }
+
+    .portfolio__services-list {
+        margin-top: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .portfolio__wrapper {
+        width: 960px;
+    }
+    .portfolio__works-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .portfolio__work {
+        width: 295px;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .portfolio__best-work {
+        width: 960px;
+        flex-direction: row;
+        margin-top: 40px;
+    }
+    
+    .portfolio__info {
+        padding: 30px 40px;
+    }
+
+    .portfolio__best-work .portfolio__info {
+        padding: 100px 40px 40px;
+    }
+}

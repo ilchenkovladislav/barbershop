@@ -1,0 +1,121 @@
+@import "../colors.scss";
+.user-list {
+    list-style: none;
+    background-color: $brown-dark;
+}
+
+.user-list__item {
+    position: relative;
+}
+
+.user-list__login {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 0 10px 45px;
+    &::before {
+        content: "";
+        background-image: url("../img/login-icon.svg");
+        width: 15px;
+        height: 15px;
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 13px;
+    }
+}
+
+.user-list__login-form {
+    position: absolute;
+    width: 350px;
+    background-color: #222;
+    padding-bottom: 25px;
+    display: none;
+    &--opened {
+        display: none;
+    }
+}
+
+.user-list__login-form form {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.user-list__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.user-list__wrapper label {
+    display: flex;
+    color: #eee;
+    font-size: 16px;
+}
+
+.user-list__wrapper input {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.user-list__wrapper a {
+    font-size: 16px;
+    color: #eee;
+}
+
+.user-list__field-login, .user-list__field-password {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+}
+ 
+.user-list__label {
+    display: block;
+    color: #eee;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.user-list__submit {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .user-list {
+        background-color: transparent;
+    }
+
+    .user-list__login {
+        padding: 20px 0;
+        padding-left: 25px;
+        font-size: 0;
+        &::before {
+            left: 0;
+            top: 13px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .user-list__login-form {
+        &--opened {
+            display: block;
+        }
+    }
+
+    .user-list__login {
+        font-size: 18px;
+        &::before {
+            left: 0;
+            top: 24px;
+        }
+    }
+}

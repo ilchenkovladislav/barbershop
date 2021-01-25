@@ -1,0 +1,43 @@
+.contacts__name {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+.contacts__address {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contacts__tel {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    border: 1px solid #3e3e3e;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .contacts__name {
+        text-align: left;
+    }
+    .contacts__address {
+        text-align: left;
+    }
+    .contacts__tel {
+        border: none;
+        text-align: left;
+        font-weight: normal;
+        margin-top: 10px;
+        padding: 0;
+    }
+}
+

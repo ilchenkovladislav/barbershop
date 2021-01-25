@@ -1,0 +1,73 @@
+@import "../colors.scss";
+
+.site-list {
+    list-style: none;
+    background-color: $brown-light;
+}
+
+.site-list__item {
+    border-bottom: 1px solid darken($brown-light, 10);
+    border-top: 1px solid lighten($brown-light, 10);
+}
+
+.site-list__link {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px;
+}
+
+@media (min-width: 786px) {
+    .site-list {
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .site-list__item {
+        border: none;
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &--active {
+            border-bottom: 2px solid $brown-light;
+        }
+    }
+
+    .site-list__link {
+        padding: 20px 0;
+        transition: all .2s;
+        &:hover {
+            color: $brown-light;
+            transition: all .2s;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .site-list__item {
+        width: 160px;
+        text-align: center;
+        margin: 0;
+        &--active {
+            border: none;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 30px;
+                left: 30px;
+                height: 3px;
+                background-color: $brown-light;
+            }
+        }
+    }
+    .site-list__link {
+        &:hover {
+            color: #000;
+            background-color: #fff;
+        }
+    }
+}

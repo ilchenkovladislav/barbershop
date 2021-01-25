@@ -1,0 +1,46 @@
+@import "../colors.scss";
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header__logo {
+    background-color: $bg-black-mobile;
+    display: block;
+    padding: 20px 0;
+}
+
+.page-header__logo-image {
+    display: block;
+    margin: 0 auto;
+    width: 226px;
+}
+
+@media (min-width: 768px) {
+    .page-header__logo {
+        background: $bg-black-mobile url("../img/back-tablet.jpg") no-repeat center center;
+        background-size: cover;
+        background-color: transparent;
+        order: 2;
+        padding: 0;
+        height: 400px;
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url("../img/back-tablet@2x.jpg");
+        }
+    }
+    .page-header__logo-image {
+        width: 370px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page-header__logo {
+        height: 650px;
+        background-image: url("../img/back-desktop.jpg");
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url("../img/back-desktop@2x.jpg");
+        }
+    }
+}
