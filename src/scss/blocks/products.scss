@@ -1,0 +1,70 @@
+@import "../colors.scss";
+
+.products {
+    width: 100%;
+    @media (min-width: 1200px) {
+        width: 700px;
+    }
+}
+
+.products__list {
+    list-style: none;
+    display: block;
+
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.products__item {
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 1200px) {
+        width: 220px;
+    }
+}
+
+.products__img {
+    width: 100%;
+}
+
+.products__info {
+    padding: 15px;
+}
+
+.products__title {
+    font-size: 18px;
+}
+
+.products__wrapper {
+    display: flex;
+    margin-top: 12px;
+}
+
+.products__price {
+    background-color: #e5e5e5;
+    text-align: center;
+    width: 110px;
+    flex-shrink: 0;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+.products__btn {
+    font-size: 14px;
+}
