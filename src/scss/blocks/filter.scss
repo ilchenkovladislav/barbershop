@@ -11,6 +11,7 @@
     &--opened {
         display: block;
         position: absolute;
+        z-index: 1;
         background-color: $bg-grey;
         right: 0;
         top: 0;
