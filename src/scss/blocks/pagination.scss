@@ -19,6 +19,14 @@
 
     &--current {
         background-color: #ffffff;
+    }
+    
+    &--current .pagination__link {
         color: #000000
     }
+}
+
+.pagination__link {
+    text-decoration: none;
+    color: #ffffff;
 }
