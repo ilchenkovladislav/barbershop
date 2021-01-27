@@ -29,6 +29,8 @@
     max-width: 300px;
     margin: 0 auto;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
     &:last-child {
         margin-bottom: 0;
     }
@@ -48,6 +50,10 @@
 
 .products__info {
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .products__title {
