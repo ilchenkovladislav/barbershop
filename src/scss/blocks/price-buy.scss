@@ -1,0 +1,19 @@
+.price-buy {
+    display: flex;
+}
+
+.price-buy__price {
+    background-color: #e5e5e5;
+    text-align: center;
+    width: 110px;
+    flex-shrink: 0;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+.price-buy__btn {
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}

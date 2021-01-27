@@ -24,7 +24,7 @@
 
 .products__item {
     background-color: #fff;
-    border: 1px #ddd solid;
+    border: 1px solid $border;
     min-width: 240px;
     max-width: 300px;
     margin: 0 auto;
@@ -60,29 +60,12 @@
     font-size: 18px;
 }
 
-.products__wrapper {
-    display: flex;
-    margin-top: 12px;
-}
-
-.products__price {
-    background-color: #e5e5e5;
-    text-align: center;
-    width: 110px;
-    flex-shrink: 0;
-    font-weight: bold;
-    line-height: 48px;
-}
-
-.products__btn {
-    font-size: 14px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-}
-
 .products__pagination {
     margin-top: 30px;
+}
+
+.products__price-buy {
+    margin-top: 15px;
 }
 
 .products__page-list {
