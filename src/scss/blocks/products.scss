@@ -24,7 +24,10 @@
 
 .products__item {
     background-color: #fff;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border: 1px #ddd solid;
+    min-width: 240px;
+    max-width: 300px;
+    margin: 0 auto;
     margin-bottom: 30px;
     &:last-child {
         margin-bottom: 0;
@@ -67,4 +70,7 @@
 
 .products__btn {
     font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    border: none;
 }
