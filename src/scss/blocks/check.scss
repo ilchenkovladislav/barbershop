@@ -1,0 +1,45 @@
+.check {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;   
+    }
+}
+
+.check__input {
+    appearance: none;
+}
+
+.check__box {
+    position: absolute;
+    display: block;
+    border: 2px solid #000;
+    width: 20px;
+    height: 20px;
+    left: 0;
+}
+
+.check__input:checked + .check__box {
+    background-image: url("../img/cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.check__input:focus + .check__box {
+    outline: auto;
+    outline-offset: 2px;
+}
+
+.check__input:disabled + .check__box {
+    border: 2px solid $disabled;
+}
+
+.check__input:disabled:checked + .check__box {
+    background-image: url("../img/cross-disabled.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
