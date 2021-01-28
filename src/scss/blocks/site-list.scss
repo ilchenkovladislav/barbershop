@@ -18,12 +18,13 @@
     padding: 14px;
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
     .site-list {
         background-color: transparent;
         display: flex;
         flex-wrap: wrap;
     }
+    
     .site-list__item {
         border: none;
         margin-right: 40px;
