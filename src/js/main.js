@@ -11,6 +11,9 @@ login.addEventListener("click", function (e) {
     e.preventDefault();
     loginForm.classList.toggle("user-list__login-form--opened");
     loginFormTablet.classList.toggle("login-popup--opened");
+    
+    navMain.classList.remove("main-nav--opened");
+    navMain.classList.add("main-nav--closed");
 });
 
 loginFormClose.addEventListener("click", function (e) {
