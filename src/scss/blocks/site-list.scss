@@ -1,59 +1,40 @@
-@import "../colors.scss";
-
 .site-list {
     list-style: none;
     background-color: $brown-light;
+
+    @media (min-width: 768px) {
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .site-list__item {
     border-bottom: 1px solid darken($brown-light, 10);
     border-top: 1px solid lighten($brown-light, 10);
-}
 
-.site-list__link {
-    color: #fff;
-    display: block;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 14px;
-}
-
-@media (min-width: 768px) {
-    .site-list {
-        background-color: transparent;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .site-list__item {
+    @media (min-width: 768px) {
         border: none;
         margin-right: 40px;
+
         &:last-child {
             margin-right: 0;
         }
+        
         &--active {
             border-bottom: 2px solid $brown-light;
         }
     }
 
-    .site-list__link {
-        padding: 20px 0;
-        transition: all .2s;
-        &:hover[href] {
-            color: $brown-light;
-            transition: all .2s;
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .site-list__item {
+    @media (min-width: 1200px) {
         width: 160px;
         text-align: center;
         margin: 0;
+
         &--active {
             border: none;
             position: relative;
+
             &::before {
                 content: "";
                 position: absolute;
@@ -65,10 +46,24 @@
             }
         }
     }
-    .site-list__link {
+}
+
+.site-list__link {
+    color: $white;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px;
+
+    @media (min-width: 768px) {
+        padding: 20px 0;
+    }
+    
+    @media (min-width: 1200px) {
+        transition: all .2s;
         &:hover[href] {
-            color: #000;
-            background-color: #fff;
+            color: $black;
+            background-color: $white;
         }
     }
 }

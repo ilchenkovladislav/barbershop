@@ -1,32 +1,6 @@
 @import "../colors.scss";
 .news {
-    margin: 0 auto;
-    margin-top: 40px;
-    padding: 50px 20px; 
     background-color: $bg-grey;
-    position: relative;
-    &::before, &::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: 0;
-        border-bottom: 30px solid $bg-grey;
-    }
-    &::before {
-        right: 0;
-        border-left: 50vw solid $bg-black-mobile;
-    }
-    &::after {
-        left: 0;
-        border-right: 50vw solid $bg-black-mobile;
-    }
-}
-
-.news__wrapper {
-    padding-top: 30px;
-    width: 90%;
-    margin: 0 auto;
 }
 
 .news__tittle {
@@ -92,18 +66,15 @@
 
 @media (min-width: 768px) {
     .news {
-        padding: 50px 65px;
-        margin: 0;
-        &::before, &::after {
-            display: none;
-        }
+
     }
+
     .news__wrapper {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 640px;
     }
+
     .news__list {
         flex-direction: row;
         order: 3;
@@ -131,11 +102,7 @@
 
 @media (min-width: 1200px) {
     .news {
-        padding: 50px 120px;
-    }
-
-    .news__wrapper {
-        width: 960px;
+        
     }
     
     .news__item {

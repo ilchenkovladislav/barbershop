@@ -29,7 +29,7 @@ body {
     font-size: 18px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     body {
         background-color: $bg-black;
     }
@@ -57,13 +57,11 @@ img {
 }
 
 .container {
-    padding: 50px 20px;
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         width: 640px;
         margin: 0 auto;
-        padding: 50px 0;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         width: 960px;
     }
 }

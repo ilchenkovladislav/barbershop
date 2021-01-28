@@ -1,18 +1,38 @@
-@import "../colors.scss";
-
 .main-nav {
     position: relative;
-    // width: 320px;
     width: 100%;
     min-width: 280px;
     margin: 0 auto;
     min-height: 50px;
     background-color: $brown-light;
+
+    @media (min-width: 768px) {
+        background-color: $black;
+        width: 100%;
+    }
+}
+
+.main-nav__toggle {
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
 
 .main-nav__wrapper {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 640px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 1200px) {
+        width: 960px;
+    }
 }
 
 .main-nav--opened .main-nav__toggle, .main-nav--closed .main-nav__toggle {
@@ -34,7 +54,7 @@
     position: relative;
     width: 30px;
     height: 2px;
-    background-color: #fff;
+    background-color: $white;
     margin: 0 auto;
     &::before, &::after {
         content: "";
@@ -42,7 +62,7 @@
         position: absolute;
         width: 30px;
         height: 2px;
-        background-color: #fff;
+        background-color: $white;
     }
     &::before {
         top: 5px;
@@ -61,7 +81,7 @@
     position: relative;
     width: 30px;
     height: 0;
-    background-color: #fff;
+    background-color: $white;
     margin: 0 auto;
     &::before, &::after {
         content: "";
@@ -69,7 +89,7 @@
         position: absolute;
         width: 30px;
         height: 2px;
-        background-color: #fff;
+        background-color: $white;
     }
     &::before {
         transform: rotate(45deg);
@@ -122,29 +142,4 @@
         display: block;
     }
 
-}
-
-@media (min-width: 768px) {
-    .main-nav {
-        background-color: #000;
-        width: 100%;
-    }
-
-    .main-nav__toggle {
-        display: none;
-    }
-
-    .main-nav__wrapper {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 640px;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 1200px) {
-    .main-nav__wrapper {
-        width: 960px;
-    }
 }
