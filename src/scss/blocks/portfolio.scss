@@ -26,6 +26,7 @@
     width: 280px;
     margin: 0 auto;
     margin-bottom: 20px;
+    border: 1px solid $border;
 }
 
 .portfolio__best-work {
@@ -35,7 +36,6 @@
 .portfolio__info {
     display: flex;
     flex-direction: column;
-    border: 1px solid $border;
     padding: 25px;
 }
 
@@ -155,6 +155,7 @@
     
     .portfolio__info {
         padding: 30px 40px;
+        flex-grow: 1;
     }
 
     .portfolio__best-work .portfolio__info {
