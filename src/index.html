@@ -282,24 +282,7 @@
         </form>
         <button class="login-popup__close">Закрыть форму</button>
     </div>
-
-    <script>
-        let navMain = document.querySelector(".main-nav");
-        let navToggle = document.querySelector(".main-nav__toggle");
-
-        navMain.classList.remove("main-nav--nojs");
-
-        navToggle.addEventListener("click", function () {
-            if (navMain.classList.contains("main-nav--closed")) {
-                navMain.classList.remove("main-nav--closed");
-                navMain.classList.add("main-nav--opened");
-            } else {
-                navMain.classList.remove("main-nav--opened");
-                navMain.classList.add("main-nav--closed");
-            }
-        })
-    </script>
-
+    
     <script src="js/main.js"></script>
     <script src="js/carousel.js"></script>
 </body>
