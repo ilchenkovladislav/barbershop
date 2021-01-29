@@ -2,6 +2,10 @@
     list-style: none;
 }
 
+.slider__item {
+
+}
+
 .slider__toggles {
     text-align: center;
 }
@@ -17,5 +21,24 @@
     cursor: pointer;
     &--active {
         background-color: #f7f4f1;
+    }
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: transparent !important;
+    border: 1px solid #f7f4f1 !important;
+    transform: rotate(45deg);
+    font-size: 0;
+    margin: 0 10px;
+    cursor: pointer;
+    &.active {
+        background-color: #f7f4f1 !important;
     }
 }
