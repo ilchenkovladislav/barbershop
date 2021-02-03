@@ -175,59 +175,64 @@
         </section>
 
         <section class="reviews">
-            <div class="reviews__wrapper slider">
+            <div class="reviews__wrapper container">
                 <h2 class="reviews__title">Отзывы о нас</h2>
                 <a class="reviews__set-feedback button" href="#">Оставить свой</a>
-                <div class="reviews__container">
-                    <div class="reviews__list">
-                        <blockquote class="reviews__item">
-                            <p class="reviews__author-picture">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="./img/user-image-big.jpg 1x, ./img/user-image-big@2x.jpg 2x">
-                                    <source media="(min-width: 768px)"
-                                        srcset="./img/user-image-tablet.jpg 1x, ./img/user-image-tablet@2x.jpg 2x">
-                                    <img class="reviews__author-image" src="./img/user-image-mobile.jpg"
-                                        srcset="./img/user-image-mobile@2x.jpg 2x" alt="Фото Трэвис Баркера">
-                                </picture>
-                            </p>
-                            <div class="reviews__wrapper-text">
-                                <cite class="reviews__author-name">Трэвис Баркер</cite>
-                                <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
-                                    чтобы было видно новую татуировку!</p>
-                            </div>
-                        </blockquote>
-                        <blockquote class="reviews__item">
-                            <p class="reviews__author-picture">
-                                <img class="reviews__author-image" src="./img/user-image-1.jpg"
-                                    alt="Фото Трэвис Баркера">
-                            </p>
-                            <div class="reviews__wrapper-text">
-                                <cite class="reviews__author-name">Трэвис Баркер</cite>
-                                <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
-                                    чтобы было видно новую татуировку!</p>
-                            </div>
-                        </blockquote>
-                        <blockquote class="reviews__item">
-                            <p class="reviews__author-picture">
-                                <img class="reviews__author-image" src="./img/user-image-1.jpg"
-                                    alt="Фото Трэвис Баркера">
-                            </p>
-                            <div class="reviews__wrapper-text">
-                                <cite class="reviews__author-name">Трэвис Баркер</cite>
-                                <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
-                                    чтобы было видно новую татуировку!</p>
-                            </div>
-                        </blockquote>
-                    </div>
-                    <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-                    <button class="reviews__next" type="button">Следующий отзыв</button>
+
+                <div class="owl-carousel reviews__list">
+                    <blockquote class="reviews__item">
+                        <p class="reviews__author-picture">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./img/user-image-big.jpg 1x, ./img/user-image-big@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./img/user-image-tablet.jpg 1x, ./img/user-image-tablet@2x.jpg 2x">
+                                <img class="reviews__author-image" src="./img/user-image-mobile.jpg"
+                                    srcset="./img/user-image-mobile@2x.jpg 2x" alt="Фото Трэвис Баркера">
+                            </picture>
+                        </p>
+                        <div class="reviews__wrapper-text">
+                            <cite class="reviews__author-name">Трэвис Баркер</cite>
+                            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+                                чтобы было видно новую татуировку!</p>
+                        </div>
+                    </blockquote>
+                    <blockquote class="reviews__item">
+                        <p class="reviews__author-picture">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./img/user-image-big.jpg 1x, ./img/user-image-big@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./img/user-image-tablet.jpg 1x, ./img/user-image-tablet@2x.jpg 2x">
+                                <img class="reviews__author-image" src="./img/user-image-mobile.jpg"
+                                    srcset="./img/user-image-mobile@2x.jpg 2x" alt="Фото Трэвис Баркера">
+                            </picture>
+                        </p>
+                        <div class="reviews__wrapper-text">
+                            <cite class="reviews__author-name">Трэвис Баркер</cite>
+                            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+                                чтобы было видно новую татуировку!</p>
+                        </div>
+                    </blockquote>
+                    <blockquote class="reviews__item">
+                        <p class="reviews__author-picture">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./img/user-image-big.jpg 1x, ./img/user-image-big@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./img/user-image-tablet.jpg 1x, ./img/user-image-tablet@2x.jpg 2x">
+                                <img class="reviews__author-image" src="./img/user-image-mobile.jpg"
+                                    srcset="./img/user-image-mobile@2x.jpg 2x" alt="Фото Трэвис Баркера">
+                            </picture>
+                        </p>
+                        <div class="reviews__wrapper-text">
+                            <cite class="reviews__author-name">Трэвис Баркер</cite>
+                            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+                                чтобы было видно новую татуировку!</p>
+                        </div>
+                    </blockquote>
+                    
                 </div>
-                <p class="reviews__toggles slider__toggles">
-                    <button class="slider__toggle reviews__toggle slider__toggle--active" type="button">1</button>
-                    <button class="slider__toggle reviews__toggle" type="button">2</button>
-                    <button class="slider__toggle reviews__toggle" type="button">3</button>
-                </p>
             </div>
         </section>
     </main>
@@ -288,14 +293,24 @@
     <script src="js/owl.carousel.min.js"></script>
 
     <script>
-        $(window).on('load', function () {
+        $(window).on("load", () => {
             if ($(this).width() > 767) {
-                $(".owl-carousel").trigger('destroy.owl.carousel');
+                $(".advantages__list").trigger('destroy.owl.carousel');
             } else {
-                $(".owl-carousel").owlCarousel({
+                $(".advantages__list").owlCarousel({
                     items: 1
                 });
             }
+        });
+
+        $(document).ready(() => {
+            $(".reviews__list").owlCarousel({
+                items: 1,
+                nav: true,
+                navClass: ["reviews__prev", "reviews__next"],
+                dotsClass: "reviews__dots",
+                dotClass: "reviews__dot"
+            });
         });
     </script>
 
