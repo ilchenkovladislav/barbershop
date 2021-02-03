@@ -2,7 +2,7 @@
     background-color: $bg-grey;
     padding-top: 30px;
     padding-bottom: 50px;
-    border-top: 1px solid #e5ddd5;
+    border-top: 1px solid $border;
     
     @media (min-width: $tablet) {
         padding-top: 40px;
@@ -66,7 +66,7 @@
 
     @media (min-width: $tablet) {
         align-items: center;
-        border: 1px solid #e5ddd5;
+        border: 1px solid $border;
         height: 160px;
         margin: 0 50px;
     }
@@ -78,7 +78,7 @@
 
 .reviews__author-image {
     width: 50px;
-    height: 51px;
+    height: 50px;
     object-fit: cover;
     margin-top: 10px;
 
@@ -99,6 +99,16 @@
 
 .reviews__wrapper-text {
     margin-left: 20px;
+    
+    @media (min-width: $tablet) {
+        margin-left: 35px;
+        padding-right: 35px;
+    }
+    
+    @media (min-width: $desktop) {
+        margin-left: 70px;
+        padding-right: 70px;
+    }
 }
 
 .reviews__author-name {
@@ -123,40 +133,41 @@
         width: 50px;
         top: 0;
         background-color: $bg-grey;
-        border: 1px solid #e5ddd5;
+        border: 1px solid $border;
         font-size: 0px;
         cursor: pointer;
+
         &:hover {
-            border: 1px solid darken(#e5ddd5, 10);
+            border: 1px solid darken($border, 10);
         }
     }
 
     @media (min-width: $desktop) {
-        border: 1px solid #e5ddd5;
+        border: 1px solid $border;
     }
 }
 
-// чекнуть есть ли разница в рендере стилей с display none
 .reviews__prev {
-    border-right: none;
-    left: 0;
-    &::before {
-        font-size: 16px;
-        content: "\25C4";
+    @media (min-width: $tablet) {
+        border-right: none;
+        left: 0;
+        &::before {
+            font-size: 16px;
+            content: "\25C4";
+        }
     }
 }
 
 .reviews__next {
-    border-left: none;
-    right: 0;
-    &::before {
-        font-size: 16px;
-        content: "\25BA";
+    @media (min-width: $tablet) {
+        border-left: none;
+        right: 0;
+        &::before {
+            font-size: 16px;
+            content: "\25BA";
+        }
     }
 }
-// =================================================================
-
-
 
 .reviews__dots {
     margin-top: 30px;
@@ -186,11 +197,11 @@
     width: 10px;
     height: 10px;
     background-color: transparent;
-    border: 1px solid #353535;
+    border: 1px solid $bg-black;
     transform: rotate(45deg);
     font-size: 0;
     margin: 0 10px;
     &.active {
-        background-color: #353535;
+        background-color: $bg-black;
     }
 }
