@@ -1,25 +1,7 @@
-@import "../colors.scss";
-
 .page-footer {
     padding-top: 50px;
     position: relative;
     background-color: $bg-footer;
-    &::before, &::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: -30px;
-        border-bottom: 30px solid $bg-footer;
-    }
-    &::before {
-        right: 0;
-        border-left: 50vw solid transparent;
-    }
-    &::after {
-        left: 0;
-        border-right: 50vw solid transparent;
-    }
 }
 
 .page-footer__wrapper {

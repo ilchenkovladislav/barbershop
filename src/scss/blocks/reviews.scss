@@ -3,10 +3,16 @@
     padding-top: 30px;
     padding-bottom: 50px;
     border-top: 1px solid $border;
+
+    background-image: url("../img/angle-dark.svg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     
     @media (min-width: $tablet) {
         padding-top: 40px;
         padding-bottom: 65px;
+        background-image: none;
     }
     
     @media (min-width: $desktop) {
