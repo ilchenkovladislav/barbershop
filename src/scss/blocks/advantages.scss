@@ -6,10 +6,12 @@
     padding-bottom: 50px;
     
     @media (min-width: $tablet) {
+        padding-top: 10px;
         padding-bottom: 60px;
     }
     
     @media (min-width: $desktop) {
+        padding-top: 80px;
         padding-bottom: 80px;
     }
 }
@@ -19,17 +21,14 @@
     
     @media (min-width: $tablet) {
         display: block;
-        margin-top: 10px; 
     }
     
     @media (min-width: $desktop) {
         display: flex;
-        margin-top: 80px;
     }
 }
 
 .advantages__item {
-    min-width: 280px;
     max-width: 440px;
     padding: 0 20px;
     margin: 0 auto;
@@ -117,4 +116,19 @@
 
 .advantages .owl-dots {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.advantages .owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: transparent !important;
+    border: 1px solid #f7f4f1 !important;
+    transform: rotate(45deg);
+    font-size: 0;
+    margin: 0 10px;
+    &.active {
+        background-color: #f7f4f1 !important;
+    }
 }
