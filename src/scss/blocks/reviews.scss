@@ -37,6 +37,10 @@
         text-align: left;
         font-size: 40px;
     }
+
+    @media (min-width: $desktop) {
+        margin-left: 70px;
+    }
 }
 
 .reviews__set-feedback {
@@ -69,6 +73,10 @@
         border: 1px solid $border;
         height: 160px;
         margin: 0 50px;
+    }
+
+    @media (min-width: $desktop) {
+        margin: 0 70px;
     }
 }
 
@@ -156,6 +164,10 @@
             content: "\25C4";
         }
     }
+
+    @media (min-width: $desktop) {
+        border-right: 1px solid $border;
+    }
 }
 
 .reviews__next {
@@ -166,6 +178,10 @@
             font-size: 16px;
             content: "\25BA";
         }
+    }
+
+    @media (min-width: $desktop) {
+        border-left: 1px solid $border;
     }
 }
 
