@@ -1,22 +1,21 @@
 .copyright__text {
     display: block;
-    color: #fff;
+    color: $white;
     font-weight: normal;
     text-align: center;
     font-size: 18px;
 }
 
 .copyright__link {
-    color: #fff;
+    color: $white;
     margin: 20px auto 0;
+    
     &:hover {
-        background-color: #fff;
-        color: #000;
+        background-color: $white;
+        color: $black;
     }
-}
 
-@media (min-width: 768px) {
-    .copyright__link {
+    @media (min-width: $tablet) {
         margin: 0;
         margin-top: 20px;
         margin-left: auto;
