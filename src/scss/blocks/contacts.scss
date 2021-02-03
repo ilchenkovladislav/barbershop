@@ -1,38 +1,37 @@
 .contacts__name {
     font-size: 18px;
-    color: #fff;
+    color: $white;
     text-align: center;
     display: block;
+
+    @media (min-width: $tablet) {
+        text-align: left;
+    }
 }
 
 .contacts__address {
     font-size: 18px;
-    color: #fff;
-    display: block;
+    color: $white;
     text-align: center;
     margin-top: 20px;
+
+    @media (min-width: $tablet) {
+        text-align: left;
+    }
 }
 
 .contacts__tel {
     font-size: 18px;
-    color: #fff;
+    color: $white;
     display: block;
-    border: 1px solid #3e3e3e;
+    border: 1px solid $border-dark;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 0;
+    padding: 15px 0;
     margin-top: 20px;
-}
 
-@media (min-width: 768px) {
-    .contacts__name {
-        text-align: left;
-    }
-    .contacts__address {
-        text-align: left;
-    }
-    .contacts__tel {
+    @media (min-width: $tablet) {
         border: none;
         text-align: left;
         font-weight: normal;
@@ -40,4 +39,3 @@
         padding: 0;
     }
 }
-
