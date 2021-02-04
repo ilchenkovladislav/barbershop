@@ -1,7 +1,7 @@
-@import "../colors.scss";
-
 .store {
     background: $bg-grey;
+    padding-top: 30px;
+    padding-bottom: 70px;
 }
 
 .store__grid {
@@ -17,7 +17,7 @@
 
 .store__top-wrapper {
     display: block;
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -30,12 +30,12 @@
     margin-top: 20px;
     width: 100%;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         margin-top: 0;
         width: 200px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         display: none;
     }
 }

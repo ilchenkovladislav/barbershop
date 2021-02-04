@@ -1,23 +1,45 @@
-@import "../colors.scss";
-.portfolio-main {
-    // background-color: $bg-grey;
-}
 
 .portfolio {
     background-color: $bg-grey;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background-image: url("../img/angle-bg-black.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: $tablet) {
+        padding-bottom: 100px;
+    }
+
+    @media (min-width: $desktop) {
+        background-image: none;
+    }
 }
 
-.portfolio__wrapper {
-    padding: 35px 0;
+.portfolio__header-row {
+    @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
-.portfolio__tittle {
+.portfolio__title {
     margin: 0;
     text-align: center;
+
+    @media (min-width: $tablet) {
+        font-size: 40px;
+        text-align: left;
+    }
 }
 
 .portfolio__to-main {
     display: none;
+
+    @media (min-width: $tablet) {
+        display: block;
+    }
 }
 
 .portfolio__work {
@@ -27,21 +49,69 @@
     margin: 0 auto;
     margin-bottom: 20px;
     border: 1px solid $border;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet) {
+        flex-direction: row;
+        width: 640px;
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 295px;
+        flex-direction: column;
+        margin: 0;
+    }
 }
 
 .portfolio__best-work {
-    margin-top: 35px;
+    margin-top: 30px;
+
+    @media (min-width: $tablet) {
+        margin-top: 50px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 960px;
+        flex-direction: row;
+        margin-top: 85px;
+    }
+}
+
+.portfolio__client-image {
+    flex-shrink: 0;
+    font-size: 0;
 }
 
 .portfolio__info {
     display: flex;
     flex-direction: column;
     padding: 25px;
+
+    @media (min-width: $tablet) {
+        padding: 45px;
+        width: 100%;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 30px;
+        flex-grow: 1;
+    }
 }
 
-.portfolio__client-image {
-    flex-shrink: 0;
-    font-size: 0;
+.portfolio__best-work .portfolio__info {
+    @media (min-width: $desktop) {
+        padding: 120px 40px 40px;
+    }
+}
+
+.portfolio__best-work .portfolio__client-review {
+    @media (min-width: $desktop) {
+        padding-right: 100px;
+    }
 }
 
 .portfolio__client-name {
@@ -58,10 +128,16 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+
+    @media (min-width: $tablet) {
+        margin-top: auto;
+    }
 }
 
 .portfolio__services-item {
     position: relative;
+    display: flex;
+    align-items: center;
     padding-left: 40px;
     margin-right: 25px;
     margin-top: 25px;
@@ -69,96 +145,40 @@
         content: "";
         position: absolute;
         left: 0;
-        top: 0;
-        width: 21px;
-        height: 20px;
-        background-image: url("../img/admiral-beard.svg");
+        width: 25px;
+        height: 25px;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-}
 
-@media (min-width: 768px) {
-    .portfolio-main {
-        position: relative;
-        &::before, &::after {
-            content: "";
-            width: 0;
-            height: 0;
-            position: absolute;
-            border-bottom: 100px solid $bg-grey;
-            top: -100px;
-        }
-        &::after {
-            border-left: 50vw solid transparent;
-            right: 0;
-        }
+    &--haircut {
         &::before {
-            border-right: 50vw solid transparent;
-            left: 0;
+            background-image: url("../img/admiral-beard.svg");
+        }
+    }
+    
+    &--shaving {
+        &::before {
+            background-image: url("../img/scissors.svg");
+        }
+    }
+    
+    &--mustache {
+        padding-left: 50px;
+        &::before {
+            background-image: url("../img/mustache.svg");
+            width: 35px;
+            height: 35px;
         }
     }
 
-    .portfolio__wrapper {
-        width: 640px;
-        margin: 0 auto;
-    }
-    
-    .portfolio__first-row {
-        display: flex;
-        justify-content: space-between;
-    }
 
-    .portfolio__tittle {
-        font-size: 40px;
-        text-align: left;
-    }
-
-    .portfolio__to-main {
-        display: block;
-    }
-
-    .portfolio__work {
-        flex-direction: row;
-        width: 640px;
-        margin-bottom: 40px;
-    }
-
-    .portfolio__info {
-        padding: 50px;
-        width: 100%;
-    }
-
-    .portfolio__services-list {
-        margin-top: auto;
-    }
 }
 
-@media (min-width: 1200px) {
-    .portfolio__wrapper {
-        width: 960px;
-    }
-    .portfolio__works-wrapper {
+.portfolio__works-wrapper {
+    @media (min-width: $desktop) {
         display: flex;
         justify-content: space-between;
         margin-top: 40px;
-    }
-    .portfolio__work {
-        width: 295px;
-        flex-direction: column;
-        margin: 0;
-    }
-    
-    .portfolio__best-work {
-        width: 960px;
-        flex-direction: row;
-        margin-top: 40px;
-    }
-    
-    .portfolio__info {
-        padding: 30px 40px;
-        flex-grow: 1;
-    }
-
-    .portfolio__best-work .portfolio__info {
-        padding: 100px 40px 40px;
     }
 }
