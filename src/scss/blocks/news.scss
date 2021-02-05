@@ -13,15 +13,10 @@
 }
 
 .news__wrapper {
-    max-width: 600px;
-    padding: 0 20px;
-    margin: 0 auto;
     @media (min-width: $tablet) {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 0;
-        max-width: none;
     }
 }
 

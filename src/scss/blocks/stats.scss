@@ -1,14 +1,18 @@
 .stats__wrapper {
     @media (min-width: $tablet) {
+        margin: 0 auto;
+        width: 640px;
         margin-top: -208px; //высота элемента stats__header
         display: grid;
         grid-template-rows: 1fr min-content;
+        
     }
 
     @media (min-width: $desktop) {
         margin-top: -163px; //половина высоты всего блока
         grid-template-rows: none;
         grid-template-columns: 1fr 2fr;
+        width: 960px;
     }
 }
 

@@ -31,16 +31,7 @@
 .price-list__wrapper {
     display: flex;
     flex-direction: column;
-    min-width: 280px;
-    max-width: 400px;
-    padding: 0 20px;
-    margin: 0 auto;
     margin-top: 30px;
-
-    @media (min-width: $tablet) {
-        padding: 0;
-        max-width: none;
-    }
 
     @media (min-width: $desktop) {
         flex-direction: row;
