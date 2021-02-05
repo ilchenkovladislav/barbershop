@@ -5,10 +5,11 @@
 .price-buy__price {
     background-color: #e5e5e5;
     text-align: center;
-    width: 110px;
+    width: 50%;
     flex-shrink: 0;
     font-weight: bold;
     line-height: 48px;
+    font-size: 24px;
 }
 
 .price-buy__btn {
@@ -16,4 +17,5 @@
     background-color: $black;
     color: $white;
     border: none;
+    width: 50%;
 }
