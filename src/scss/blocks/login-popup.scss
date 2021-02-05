@@ -45,13 +45,14 @@
 .login-popup__login, .login-popup__password {
     padding: 15px;
     padding-right: 50px;
-    font-size: 18px;
+    font-size: 20px;
     display: block;
     width: 100%;
     border: 1px solid $border;
 
     @media (min-width: $tablet) {
         padding: 25px;
+        padding-bottom: 20px;
         padding-right: 50px;
     }
 }
