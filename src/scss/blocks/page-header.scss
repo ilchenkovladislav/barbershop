@@ -1,5 +1,3 @@
-@import "../colors.scss";
-
 .page-header {
     display: flex;
     flex-direction: column;
@@ -10,7 +8,7 @@
     display: block;
     padding: 25px 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         background: $bg-black-mobile url("../img/back-tablet.jpg") no-repeat center center;
         background-size: cover;
         background-color: transparent;
@@ -24,7 +22,7 @@
     }
 
     
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         height: 650px;
         background-image: url("../img/back-desktop.jpg");
         
@@ -39,12 +37,12 @@
     margin: 0 auto;
     width: 226px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         width: 370px;
         margin-top: 40px;
     }
     
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         width: 370px;
         margin-top: 60px;
     }

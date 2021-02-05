@@ -57,9 +57,14 @@ img {
 }
 
 .container {
+    max-width: 600px;
+    padding: 0 20px;
+    margin: 0 auto;
+
     @media (min-width: $tablet) {
         width: 640px;
-        margin: 0 auto;
+        padding: 0;
+        max-width: none;
     }
     @media (min-width: $desktop) {
         width: 960px;

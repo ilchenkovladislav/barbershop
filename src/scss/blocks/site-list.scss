@@ -2,7 +2,7 @@
     list-style: none;
     background-color: $brown-light;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         background-color: transparent;
         display: flex;
         flex-wrap: wrap;
@@ -13,7 +13,7 @@
     border-bottom: 1px solid darken($brown-light, 10);
     border-top: 1px solid lighten($brown-light, 10);
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         border: none;
         margin-right: 40px;
 
@@ -26,7 +26,7 @@
         }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         width: 160px;
         text-align: center;
         margin: 0;
@@ -55,11 +55,11 @@
     font-size: 18px;
     padding: 14px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         padding: 20px 0;
     }
     
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         transition: all .2s;
         &:hover[href] {
             color: $black;

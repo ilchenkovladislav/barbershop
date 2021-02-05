@@ -16,7 +16,7 @@
 .radio__box {
     position: absolute;
     display: block;
-    border: 2px solid #000;
+    border: 2px solid $black;
     width: 20px;
     height: 20px;
     left: 0;
@@ -26,13 +26,13 @@
 .radio__input:checked + .radio__box {
     width: 18px;
     height: 18px;
-    background-color: #000;
+    background-color: $black;
     border: 5px solid $bg-grey;
-    box-shadow: 0 0 0 2px #000;
+    box-shadow: 0 0 0 2px $black;
 }
 
 .radio__input:focus + .radio__box {
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         outline: auto;
         outline-offset: 2px;
     }

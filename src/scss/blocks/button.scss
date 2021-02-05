@@ -1,20 +1,21 @@
 .button {
     width: 260px;
     font-size: 18px;
-    border: 1px solid #e5ddd5;
+    border: 1px solid $border;
     padding: 15px 0;
-    color: #000;
+    color: $black;
     text-decoration: none;
     display: block;
     text-align: center;
     font-weight: bold;
+
     &:hover {
         cursor: pointer;
-        border: 1px solid darken(#e5ddd5, 10);
+        border: 1px solid darken($border, 10);
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .button {
         width: 160px;
     }   

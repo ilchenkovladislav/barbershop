@@ -6,8 +6,8 @@
 .pagination__item {
     width: 43px;
     height: 43px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: $black;
+    color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,15 +18,15 @@
     }
 
     &--current {
-        background-color: #ffffff;
+        background-color: $white;
     }
     
     &--current .pagination__link {
-        color: #000000
+        color: $black;
     }
 }
 
 .pagination__link {
     text-decoration: none;
-    color: #ffffff;
+    color: $white;
 }

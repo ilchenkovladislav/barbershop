@@ -3,7 +3,7 @@
 .filter {
     display: none;
     
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         width: 200px;
         display: block;
     }
@@ -17,7 +17,8 @@
         padding: 30px;
         width: 100%;
         background-color: $bg-grey;
-        @media (min-width: 768px) {
+        
+        @media (min-width: $tablet) {
             position: fixed;
             width: 400px;
             height: 100%;
@@ -32,7 +33,7 @@
     align-items: center;
     margin-bottom: 30px;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         display: none;
     }
 }
@@ -49,6 +50,7 @@
     background-color: transparent;
     border: none;
     position: relative;
+
     &::before, &::after {
         content: "";
         position: absolute;
@@ -58,9 +60,11 @@
         background-color: #222;
         left: 50%;
     }   
+
     &::before {
         transform: translateX(-50%) rotate(45deg);
     }
+
     &::after {
         transform: translateX(-50%) rotate(-45deg);
     }
@@ -78,8 +82,8 @@
 }
 
 .filter__submit {
-    background-color: #000;
-    color: #fff;
+    background-color: $black;
+    color: $white;
     font-size: 14px;
     width: 100%;
 }
