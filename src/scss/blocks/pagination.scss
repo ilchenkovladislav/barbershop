@@ -4,10 +4,7 @@
 }
 
 .pagination__item {
-    width: 43px;
-    height: 43px;
     background-color: $black;
-    color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +24,11 @@
 }
 
 .pagination__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
     text-decoration: none;
     color: $white;
 }
