@@ -17,11 +17,31 @@
     padding: 0;
 }
 
+.form-register__input-wrapper {
+    position: relative;
+}
+
 .form-register__input {
     padding: 15px 20px;
     border: 1px solid $border;
     margin-bottom: 6px;
     width: 100%;
+
+    &.valid {
+        border: 2px solid #198754;
+    }
+
+    &.error {
+        border: 2px solid #dc3545;
+    }
+}
+
+span.error {
+    font-size: 14px;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    color: #dc3545;
 }
 
 .form-register__href-main {
