@@ -38,6 +38,10 @@ $(() => {
             email: {
                 required: true,
                 email: true
+            },
+
+            beards: {
+                required: true
             }
         },
 
@@ -46,22 +50,30 @@ $(() => {
                 required: "Укажите вашу фамилию",
                 minlength: "Длина фамилии должна быть не менее 2 символов"
             },
+            
             firstName: {
                 required: "Укажите ваше имя",
                 minlength: "Длина имени должна быть не менее 2 символов"
             },
+            
             thirdName: {
                 required: "Укажите ваше отчество",
                 minlength: "Длина отчества должна быть не менее 2 символов"
             },
 
+
             phone: {
                 required: "Укажите номер телефона",
                 mobileRU: "Укажите корректный номер телефона"
             },
+            
             email: {
                 required: "Укажите вашу электронную почту",
                 email: "email должен быть вида: example@mail.com"
+            },
+            
+            beards: {
+                required: "Выберете модель бороды"
             }
         },
 
