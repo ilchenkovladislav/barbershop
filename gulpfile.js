@@ -23,6 +23,7 @@ const js = () => {
 const copy = () => {
     return gulp.src([
         "src/fonts/**/*.{woff,woff2}",
+        "src/css/**",
         "src/img/**",
         "src/js/**",
         "src/*.ico"

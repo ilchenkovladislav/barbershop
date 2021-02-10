@@ -1,16 +1,10 @@
 .form-register {
     background-color: $bg-grey;
-    background-image: url("../img/angle-dark.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-
     padding-top: 35px;
     padding-bottom: 75px;
     
     @media (min-width: $tablet) {
         padding-top: 60px;
-        background-image: none;
     }
 
     @media (min-width: $desktop) {

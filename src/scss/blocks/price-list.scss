@@ -1,16 +1,6 @@
 .price-list {
     background-color: $bg-black;
     padding-top: 35px;
-    padding-bottom: 50px;
-
-    background-image: url("../img/angle-dark.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    @media (min-width: $tablet) {
-        background-image: none;
-    }
 
     @media (min-width: $desktop) {
         padding-top: 70px;

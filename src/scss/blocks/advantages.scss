@@ -1,13 +1,8 @@
 .advantages {
-    background-image: url("../img/angle.svg");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 50px;
-    
     @media (min-width: $tablet) {
         padding-top: 10px;
         padding-bottom: 60px;
+        background-image: url("../img/angle-light.svg");
     }
     
     @media (min-width: $desktop) {

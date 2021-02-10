@@ -2,12 +2,9 @@
     background-color: $bg-grey;
     padding-top: 30px;
     padding-bottom: 70px;
-    background-image: url("../img/angle-bg-black.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
     @media (min-width: $tablet) {
+        background-image: url("../img/angle-dark.svg");
         padding-bottom: 100px;
     }
 
