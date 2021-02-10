@@ -5,6 +5,7 @@
     margin: 0 auto;
     min-height: 50px;
     background-color: $brown-light;
+    display: flex;
 
     @media (min-width: $tablet) {
         background-color: $black;
@@ -13,6 +14,7 @@
 }
 
 .main-nav__toggle {
+    flex-shrink: 0;
     @media (min-width: $tablet) {
         display: none;
     }
@@ -21,6 +23,7 @@
 .main-nav__wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     @media (min-width: $tablet) {
         flex-direction: row;
@@ -39,14 +42,11 @@
     background-color: $brown-dark;
     border: none;
     width: 70px;
-    height: 53px;
     font-size: 0;
-    position: absolute;
-    top: 0;
 }
 
 .main-nav--closed .main-nav__toggle {
-    right: 0;
+    order: 1;
 }
 
 .main-nav--closed .main-nav__toggle span {
@@ -73,7 +73,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-    left: 0;
+    order: -1;
 }
 
 .main-nav--opened .main-nav__toggle span {
@@ -107,7 +107,7 @@
         &--active {
             display: block;
             text-align: center;
-            padding: 0;
+            padding-left: 70px;
         }
     }
     .main-nav--closed .user-list__item {
